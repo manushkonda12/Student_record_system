@@ -1,10 +1,9 @@
 import sqlite3
 
-# Connect to SQLite database
-conn = sqlite3.connect("students.db")
+conn = sqlite3.connect("students.db")  # Connect to SQLite database
 cursor = conn.cursor()
 
-# Create table
+
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -12,12 +11,12 @@ CREATE TABLE IF NOT EXISTS students (
     roll_no TEXT UNIQUE NOT NULL,
     branch TEXT,
     cgpa REAL
-)
+)                                       
 ''')
-conn.commit()
+conn.commit()                  # Created table
 
-# Functions
-def add_student():
+
+def add_student():                    # Functions
     name = input("Enter name: ")
     roll_no = input("Enter roll no: ")
     branch = input("Enter branch: ")
