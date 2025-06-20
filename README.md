@@ -5,8 +5,8 @@ This is a simple command-line project built using **Python** and **SQLite** that
 ---
 
 ## 🔧 Technologies Used
-- Python 3.x
-- SQLite (Python built-in database)
+- Python 
+- SQLite (used database)
 
 ---
 
